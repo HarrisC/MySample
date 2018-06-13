@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
-</android.support.design.widget.CoordinatorLayout>
+    <com.example.inspiron.mysample.View.CustomSwitch
+        android:id="@+id/custom_switch"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        app:leftText="YES"
+        app:rightText="NO"
+        app:selectedTextColor="@color/white"
+        app:selectedViewColor="@color/colorPrimary"
+        app:unselectedTextColor="@color/colorPrimary"
+        app:unselectedViewColor="@color/white"/>
+
+</LinearLayout>

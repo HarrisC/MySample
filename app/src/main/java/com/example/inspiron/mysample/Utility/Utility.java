@@ -1,6 +1,7 @@
 package com.example.inspiron.mysample.Utility;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -39,5 +40,10 @@ public class Utility {
         } else {
             return null;
         }
+    }
+
+    public static float dpToPx(int dp) {
+        DisplayMetrics displayMetrics = Resources.getSystem().getDisplayMetrics();
+        return dp * displayMetrics.density;
     }
 }
